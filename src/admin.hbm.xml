@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+  <class name="database.admin" table="ADMIN">
+    <id column="ID" name="id" type="long">
+      <generator class="increment"/>
+    </id>
+    <property name="firstname">
+      <column name="FirstName"/>
+    </property>
+    <property name="lastname">
+      <column name="LastName"/>
+    </property>
+    <property name="mobileNo">
+      <column name="Phone"/>
+    </property>
+    <property name="username">
+      <column name="USERNAME"/>
+    </property>
+    <property name="password">
+      <column name="PASSWORD"/>
+    </property>
+    <property name="administrator">
+      <column name="Administrator"/>
+    </property>
+  </class>
+</hibernate-mapping>
